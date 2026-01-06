@@ -33,3 +33,4 @@ function displayCharactersInfo(){
     orc.info();
     hr();
 }
+
