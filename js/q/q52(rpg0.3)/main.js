@@ -12,35 +12,35 @@
 
 
 
-function Monster(name,hp,attack){
+function Monster(name, hp, attack) {
 	this.name = name;	// 이름
 	this.hp = hp;	// 체력. 생명력
 	this.attack = attack;	// 공격력
 
-	this.info = function(){
-		document.write("이름"+this.name+" HP:"+this.hp+" 공격력:"+this.attack);
+	this.info = function () {
+		document.write("이름 " + this.name + " HP:" + this.hp + " 공격력:" + this.attack);
 	}
 }
 
-function Character(){
+function Character() {
 	this.name;	// 이름
 	this.hp;	// 체력. 생명력
 	this.attack;	// 공격력
 
-	this.info = function(){
-		document.write("이름"+this.name+" HP:"+this.hp+" 공격력:"+this.attack);
+	this.info = function () {
+		document.write("이름 " + this.name + " HP:" + this.hp + " 공격력:" + this.attack);
 	}
 }
 
-var dragon = new Monster("드래곤",100,10);
+var dragon = new Monster("드래곤", 100, 10);
 
 var elf = new Character();
-elf.name = "성모";
+elf.name = "협";
 elf.hp = 200;
 elf.attack = 20;
 
 dragon.info();
-br();br();
+br(); br();
 elf.info();
 
 hr();
@@ -57,19 +57,19 @@ var dragon_attack = r(dragon.attack);
 
 hr();
 //todo 플레이어 데미지 표시
-dw("플레이어 데미지:"+elf_attack);
+dw("플레이어 데미지:" + elf_attack);
 hr();
 //todo 몬스터 데미지 표시
-dw("몬스터 데미지:"+dragon_attack);
+dw("몬스터 데미지:" + dragon_attack);
 hr();
 
 
 elf.hp = elf.hp - dragon_attack;		// 1~10 랜덤 뎀
 
-dragon.hp = dragon.hp - elf_attack;	
+dragon.hp = dragon.hp - elf_attack;
 
 
 dragon.info();
-br();br();
+br(); br();
 elf.info();
 
