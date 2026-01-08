@@ -8,5 +8,6 @@ function Monster(name,hp,attack,exp,gold){
 
 	this.info = function(){
 		dw("["+this.name+"("+this.hp+ " / "+this.max_hp+")]");
+		dw("(gold: "+elf.gold+")");
 	}
 }
